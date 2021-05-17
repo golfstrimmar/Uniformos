@@ -1,71 +1,96 @@
-$active: #FF6252
-$purple: #55198A
-$gray3: #828282
-  
-  
+html
+  font-family: 'Montserrat', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 10px
+  color: $dark
 body
   +bg(white)
-  font-family: 'Poppins', sans-serif
-  font-style: normal
-  font-weight: 500
-  font-size: 18px
-  line-height: 27px
-  color: $gray3
-  
+  font-size: 2rem
+  line-height: 2.4rem 
+// =f1
+//   font-size: 16px
+//   line-height: 24px
+//   color: $purple
 =f1
-  font-size: 16px
-  line-height: 24px
-  color: $purple
+  font-weight: 800
+  font-size: 7rem
+  line-height: 8.5rem
+  text-transform: uppercase
 =f2
-  font-size: 16px
-  line-height: 24px
-  color: #FFFFFF
-=f3
-  font-weight: bold
-  font-size: 56px
-  line-height: 84px
-  color: $purple
+  font-size: 1.5rem
+  line-height: 1.8rem
+// =f3
+//   font-weight: bold
+//   font-size: 56px
+//   line-height: 84px
+//   color: $purple
 
-=f4
-  font-weight: bold
-  font-size: 36px
-  line-height: 54px
-  color: #55198A
+// =f4
+//   font-weight: bold
+//   font-size: 36px
+//   line-height: 54px
+//   color: #55198A
 
-=f5
-  font-weight: bold
-  font-size: 24px
-  line-height: 36px
-  color: #FFFFFF
-=f6
-  font-weight: bold
-  font-size: 24px
-  line-height: 36px
-  color: #333333
-=f7
+// =f5
+//   font-weight: bold
+//   font-size: 24px
+//   line-height: 36px
+//   color: #FFFFFF
+// =f6
+//   font-weight: bold
+//   font-size: 24px
+//   line-height: 36px
+//   color: #333333
+// =f7
 
 
 h1,h2,h3,h4, h5, h6
   display: inline-block
   margin: 0 auto
+  font-weight: 400
+
+.main-title
+  h2
+    +f1
+    @media (max-width: 1240px) 
+      font-size: 5rem
+
+    @media (max-width: 767px)
+      font-size: 2.5rem
+      line-height: 4rem
+   
+
+._20-24
+  font-style: normal
+  font-weight: 500
+  font-size: 2rem
+  line-height: 2.4rem
+  color: #FFFFFF
 
 
-h1
-  +f3
+._15-18
+    font-size: 1.5rem
+    line-height: 1.8rem
+    color: #696969
+._15-18-b
+    font-size: 1.5rem
+    line-height: 1.8rem
+    color: #000000
 
 h2
-  +f4
-  position: relative
-  &:after
-    content: ""
-    position: absolute
-    top: 50% 
-    left: -10px
-    z-index: 2
-    width: 6px
-    height: 40px
-    background: $active
-    transform: translateY(-50%)
+  // +f4
+  // position: relative
+  // &:after
+  //   content: ""
+  //   position: absolute
+  //   top: 50% 
+  //   left: -10px
+  //   z-index: 2
+  //   width: 6px
+  //   height: 40px
+  //   background: $active
+  //   transform: translateY(-50%)
 
 
 
@@ -81,6 +106,7 @@ h2
 .btn--success
   color: white
   +bg($active)
+  transition: all 0.2s ease-in-out
   &:hover
     +bg(lighten($active,30%))
     +border(1px , darken($active,10%)!important)
@@ -111,5 +137,12 @@ h2
   background: #FFFFFF
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25)
   border-radius: 20px
+
+
+%_15-18
+  font-size: 1.5rem
+  line-height: 1.8rem
+  color: #000000
+
 
 // @extend %card

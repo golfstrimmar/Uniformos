@@ -1,6 +1,5 @@
 
   
-$active: #FF6252
 $purple: #55198A
 
 %card
@@ -17,6 +16,7 @@ $purple: #55198A
   grid-template-columns:  1fr
   // grid-template-rows:  1fr
   grid-gap: 18px
+  max-height: 100vh
   @media (max-width: 1199px)
   @media (max-width: 767px)
 
@@ -24,141 +24,101 @@ $purple: #55198A
   width: 100%
 
 .slider-cards__body
-  margin: 0 -10px
 .slider-cards__item
-  padding: 0 20px	20px
+  padding: 0 0 0 0
   min-height: 100%
-  // height: 100%
 
 
-
+.slider-card__order
+  width: 15.6rem
+  height: 15.6rem
+  border: 1px solid $active
+  border-radius: 50%
+  +center
+  position: relative
+  margin: 7.2rem 0 0 6.4rem
+  &:after
+    content: ""
+    +background-img("/assets/img/svg/arrow-long.svg")
+    position: absolute
+    width: 7.6rem
+    height: .5rem
+    top: 50% 
+    left: 0
+    z-index: 2
+    transform: translate(-50%,-50%)
+  span
+    color: $active
+    margin: 0 0 0 3.8rem
+    @media (max-width: 767px) 
+      font-size: 1.2rem
+  @media (max-width: 767px) 
+    width: 10rem
+    height: 10rem
+  
 // ---------------------стили слайда ------------------------------
 .slider-card
-  @extend %card
   display: grid !important
-.slider-card__img
-  width: calc(100% + 40px)!important
-  margin: 0 0 0 -20px
-  height: 250px!important
-  border-top-right-radius: 20px
-  border-top-left-radius: 20px
-.slider-card__title
-  // +f6
-.slider-card__text
-.slider-card__button
-  height: 70px!important
-  border-radius: 50px
-  // +f5
-  align-self: end
+  position: relative
 
+.slider-card__title
+  padding: 19rem 45.5rem 0 0
+  z-index: 2
+  @media (max-width: 1240px)
+  // @media (min-width: px) and (max-width: 1240px) 
+   
+  
+    padding: 30% 60% 0 0
+
+.slider-card__img
+  position: absolute
+  height: 100%
+  top: 0 
+  right: 0
+  @media (max-width: 767px)
+    height: 60%
+  @media (max-width: 500px)
+    height: 40%
 
 // ------------------служебные стили слайдера--------------------
 .slider-cards
   .slick-slide
-    margin: 0 10px
+    // margin: 0 10px
   .slider__body
     +pro
-    min-height: 400px
-    +bg(blue)
-
-  .slick-arrow
-    position: relative
-    position: absolute
-    top:50%
-    transform: translateY(-50%)
-    z-index: 20
-    font-size: 0
-    border-radius: 50%
-    transition: all 0.2s ease-in-out
-    width: 52px
-    height: 44px
-    background: #fff
-    border-radius: 6px
-    &::after
-      font-family: icomoon
-      position: absolute
-      font-size: 20px
-      width: 20px
-      height: 20px
-      top: 50% 
-      left: 50%
-      z-index: 22
-      transform: translate(-50%,-50%)
-      color: $active
-      transition: all 0.2s ease-in-out
-    &:hover
-      cursor: pointer
-      opacity: .5
-      &::after
-        opacity: .8
-  .slick-prev
-    left: -67px
-    &::after
-      content: '\e90e'
-      // content: '\e90c'
-  .slick-next
-    right: -67px
-    &::after
-      content: '\e910'
-      // content: '\e91a'
-
+    height: 100vh
+  
   .slick-dots
     position: absolute
-    bottom: -50px
+    bottom: 3.2%
     left: 50%
     transform: translateX(-50%)
-    +jucc
+    +jucs
+    width: 117rem
+    @media (max-width: 1199px)
+      width: calc(100vw - 6rem)
+      +jucc
     li
-      margin: 0 10px
+      margin: 0 3.5rem  0 0
       font-size: 0
-      width: 20px
-      height: 20px
+      width: 1.6rem
+      height: 1.6rem
       border-radius: 50%
-      +bg($purple)
+      border: .1rem solid rgba(0, 0, 0, 0.71)
       transition: all 0.2s ease-in-out
       &:hover
         cursor: pointer
-        +bg( lighten($purple, 30%) )  
+        // +bg( lighten($purple, 30%) )  
+      @media (max-width: 767px)
+        width: 1.2rem
+        height: 1.2rem
+ 
     li.slick-active
-      +bg(transparent)
-      +border(3px ,$purple )
+      +bg(rgba(0, 0, 0, 0.7))
   
+.slider-js-1
+  display: none
 
 
 
 
-
-
-
-
-
-// .slick-dots li:not(.slick-active)
-//     display: none
-// .slick-active
-//     z-index: 2
-//     display: inline-flex
-//     +absolute( 71px, 38px, null, null, 10px,0,0)
-//     bottom:  10px
-
-// .slick-dots-current
-//     font-weight: normal
-//     font-size: 15px
-//     color: white
-//     margin: 0 0 0 
-// .slick-dots-total
-//     font-weight: normal
-//     color: white
-//     font-size: 15px
-//     margin: 0 0 0 
-// .slick-dots-separator
-//     color: white
-//     font-size: 15px
-//     font-weight: normal
-//     margin: 0 5px
-// .slick-dots-button
-//     +center 
-//     background: transparent
-//     width: 71px
-//     height: 38px
-//     border-radius: 10px
-//     background: rgba(24,24,24, .6)

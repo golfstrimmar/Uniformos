@@ -10,12 +10,13 @@ import $ from 'jquery';
 import './js/common'
 import './js/scrolling'
 import './js/first'
-// import './js/header'
-// import './js/select'
-// import './js/start-button'
+import './js/tabs'
+import './js/select-link'
+import './js/start-button'
+
 // import "./js/jquery.nicescroll.min";
 // import "./js/header";
-// import './js/modal'
+import './js/modal'
 // import './js/contacts'
 // import "./js/polzunki";
 

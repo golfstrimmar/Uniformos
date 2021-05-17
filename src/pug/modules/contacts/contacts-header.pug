@@ -1,0 +1,38 @@
+section.first.first--contacts
+  header.header
+    .header__body.container
+      a(href="#!").header__logo
+        img(src="assets/img/svg/logo-white.svg" alt="logo")
+      nav.header__menu.menu
+        i.icon-x.header__close
+        ul.menu__list
+          li.menu__item
+              a.menu__link(href="#Pradžia") Pradžia
+          li.menu__item
+              //- a.menu__link(href="#Katalogas") Katalogas
+              .block__select
+                select.select
+                  option(value='#' disabled='disabled') Katalogas
+                  option(value='#') Pradžia
+                  option(value='#') Pradžia
+                  option(value='#') Pradžia
+                  option(value='#') Pradžia
+                i.icon-chevron-down.block__icon
+          - 
+                  items = [
+                      { title: "Apie mus", url: "#Apie_mus"},
+                      { title: "Kontaktai", url: "#Kontaktai"},
+                    ]
+          each item in items
+            li.menu__item
+              a.menu__link(href=item.url)=item.title
+      .header__info.info
+        a(href="#!").info__item 
+          img(src="./assets/img/svg/facebook.svg")
+          //- svg(height="23" width="23").info__img
+          //-   use(xlink:href="assets/img/sprite.svg#facebook")
+        a(href="#!").info__item
+          img(src="./assets/img/svg/insta-dark.svg")
+          //- svg.info__img
+          //-   use(xlink:href="assets/img/sprite.svg#insta-dark") 
+      i.icon-align-justify.header__burger

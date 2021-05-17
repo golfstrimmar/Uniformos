@@ -1,0 +1,158 @@
+.about-bunner
+  &__body
+    +background-img("/assets/img/png/about/img-1.png")
+    width: 100%
+    padding: 13.5% 29% 8.5% 23.3%
+    @media (max-width: 767px) 
+      padding: 13.5% 10% 8.5% 10%
+    
+  &__title
+    h2
+      font-weight: bold
+      font-size: 5.5rem
+      line-height: 6.7rem
+      color: #FFFFFF
+      @media (max-width: 767px) 
+        font-size: 3.5rem
+      
+  &__text
+    font-size: 2rem
+    line-height: 2.4rem
+    color: #FFFFFF
+    margin: 3rem 0 0 0
+    @media (max-width: 767px) 
+      font-size: 1.5rem
+
+.portrait
+  &__body
+    display: grid
+    grid-template-columns:  1fr 53.4rem
+    padding: 5rem 0 0 0
+    +pro
+    @media (max-width: 1199px) 
+      grid-template-columns:  1fr
+    
+  &__column
+    &:nth-child(1)
+      @media (max-width: 1199px) 
+        order: 2
+    &:nth-child(2)
+      @media (max-width: 1199px)
+        margin: 0 0 2rem 0
+  &__text
+    padding: 0  1.9rem 1rem 0
+    p
+      padding: 0  0 5rem 0
+      @media (max-width: 767px)
+        font-size: 1.5rem
+        padding: 0  0 3rem 0
+      &:last-child
+        padding: 0 0 0 0
+
+  &__items
+    margin: 2rem 0 0 0
+  &__item
+    font-weight: 500
+    font-size: 2rem
+    line-height: 2.4rem
+    color: #000000
+    position: relative
+    padding: 0 0 0 3rem
+    margin: 0 0 1.5rem 0
+    @media (max-width: 767px) 
+      font-size: 1.5rem
+      margin: 0 0 1rem 0
+    
+    &:after
+      content: ""
+      background-color: $active
+      position: absolute
+      width: 1.1rem
+      height: 1.1rem
+      z-index: 2
+      border-radius: 50%
+      top: 50% 
+      left: 0%
+      transform: translate(0%,-50%)
+  &__text--low
+    p 
+      padding: 3.6rem 0 1.5rem 2.3rem 
+      &:last-child
+        padding: 0 0 1.5rem 2.3rem 
+  
+  .portrait-video
+      width: 53.4rem
+      height: 30rem
+      +bg(blue)
+      @media (max-width: 1199px) 
+        width: 100%
+      
+
+
+.a-tabs
+  margin: 7.4rem 0 0 0
+  @media (max-width: 767px) 
+    margin: 3.4rem 0 0 0
+  
+  &__title
+      h3
+            font-weight: bold
+            font-size: 30px
+            line-height: 37px
+            color: #000000
+            text-align: center
+  &__content
+    margin: 5rem 12.3rem 0 0 
+    @media (max-width: 767px) 
+      margin: 3rem 0 0 0
+             
+  .tabs
+
+    &__items
+      +jucb	
+      border-bottom: 1px solid #000000
+      margin: 1rem 0 0 0
+      padding: 0 0 3rem 0
+      @media (max-width: 1199px) 
+        flex-direction: column
+      
+    &__item
+      font-weight: 400
+      font-size: 2rem
+      line-height: 2.4rem
+      color: #000000
+      display: inline-block
+      transition: all 0.2s ease-in-out
+      &:hover
+        cursor: pointer
+        color: $active
+      @media (max-width: 767px) 
+        font-size: 1.5rem
+      
+    &__item[data="active"]
+      font-weight: 600
+    &__body
+      min-height: 27rem
+      padding: 1rem 0 0 0
+      @media (max-width: 767px)
+        padding: .8rem 0 0 0
+    &__block
+      transition: all 0.2s ease-in-out
+      p
+    &__tags
+      +jucs
+      margin: 2rem 0 3.2rem 0
+      @media (max-width: 767px)
+        margin: 1.5rem 0 2.8rem 0
+    &__tag
+      font-weight: 500
+      @media (max-width: 767px) 
+        font-size: 1.5rem
+      
+    .akr-drop__info
+      @media (max-width: 767px) 
+        font-size: 1.5rem
+      
+
+
+

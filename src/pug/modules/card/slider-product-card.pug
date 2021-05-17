@@ -1,0 +1,99 @@
+section#product.product
+      .product__body
+        .product__column
+          .product__cat-links.product-cat-links
+            span  Kategorijos: &nbsp;
+            a.product-cat-links__link(href="#!") mokyklinės uniformos
+              span  &nbsp;, &nbsp;
+            a.product-cat-links__link(href="#!") pradinių klasių uniformos
+          .product__slider.product-slider
+              .slider
+                  ul.slider__body.slider-js-3
+                      -
+                        items = [
+                          { url: "./assets/img/png/card/img-1.png ", },
+                          { url: "assets/img/png/card/img-1.png ", },
+                          { url: "assets/img/png/card/img-1.png ", },
+                          { url: "assets/img/png/card/img-1.png ", },
+                        ]
+                      each item in items
+                          li.slider__item(style=`background-image: url(${item.url})`)
+                            //- img.slider__img(src=item.url)
+        .product__column.product-description
+          .product-description__title Komplektas P21
+          .product-description__links
+            a(href="#!")  Mergaitės uniforma
+            span &nbsp;/&nbsp;
+            a(href="#!")  Berniuko uniforma
+
+          .product-description__text
+            p Mergaitės sarafanas su pamušalu, užsegamas keturiomis sagutėmis petnešėlėse, šone – užtrauktuku. Durtas ties klubais, o nuo klubų puskliošis. Gali būti mokyklos logo.  Gaminio siuvimui naudojamas laiko patikrintas audinys, kuris puikiai atrodo bei nešiojasi.
+            p <strong>Audinio sudėtis:</strong> vilna – 45 % poliesteris – 53 % elastinas – 2 %
+            p <strong>Trikotažo sudėtis:</strong> vilna – 25 % akrilanas – 60 %  medvilnė – 15 %
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          button(type="button").product-description__button.btn--empty-white._20-24.btn-popup.popup-init-js  Pasiteirauti
+//- одиночная модалка===================
+.popup.popup--card
+    .popup__overlay
+      .popup__inner
+        section#con-form.con-form
+            form.connect__form
+              .connect__form-item
+                input#name(type='text' required='' placeholder=' Denzel Washington')
+                label(for='name') What is your name?
+                  span *
+              .connect__form-item
+                input#email(type='address' required='' placeholder=' thebestmail@mail.com')
+                label(for='email') What is your address?
+                  span *
+              .connect__form-item
+                input#phone(type='phone' required='' placeholder=' thebestmail@mail.com')
+                label(for='phone') What is your phone number?
+                  span *
+              .connect__form-item
+                textarea#message(type='text' required='' placeholder=' Your awesome message' cols=' 40' rows='6')
+                label(for='message') Žinutė
+                  span *
+             
+              .form__submit-button
+                button#submit-button(type='submit').btn--success Siųsti
+        i.icon-x.popup__close.popup__close
+
+
+
+
+
+.description-tabs
+  .tabs
+                  nav.tabs__items
+                    a(href="#tab-1" data="active").tabs__item Vyriški drabužiai HERMANN
+                    a(href="#tab-2").tabs__item Uniformos
+                    a(href="#tab-3").tabs__item Koncertinė apranga
+                    a(href="#tab-4").tabs__item Individualūs užsakymai
+                  .tabs__body
+                    .tabs__block#tab-1  
+                      span 1
+                      p  įvairūs dekoratyviniai apdirbimai: alkūniniai lopai, skeltukai, kišenių įdurai, dirželiai. Šios detalės padeda įgyvendinti mūsų pirkėjų lūkesčius.
+                      p Nereikia pamiršti ir apie aksesuarus. Peteliškės, kaklaskarės, kaklaraiščio segtukas, marškinių sąsagos – viskas tai tobulo įvaizdžio detalės.
+                    .tabs__block#tab-2  
+                      span 2
+                      p.akr-drop__info sta į mūsų siūlomus sportiško stiliaus drabužius, suderintus su klasika, kurie dvelkia nuosaikumu ir šiuolaikiškumu. Tam būdinga – papildomos kišenės, įvairūs dekoratyviniai apdirbimai: alkūniniai lopai, skeltukai, kišenių įdurai, dirželiai. Šios detalės padeda įgyvendinti mūsų pirkėjų lūkesčius.
+                      p.akr-drop__info Nereikia pamiršti ir apie aksesuarus. Peteliškės, kaklaskarės, kaklaraiščio segtukas, marškinių sąsagos – viskas tai tobulo įvaizdžio detalės.
+                    .tabs__block#tab-3  
+                      span 3
+                      p.akr-drop__info Jau virš 20 metų mūsų siuvėjų rankomis pasiūti vyriški drabužiai puošia stipriąją lytį. Klasikiniai kostiumai, švarkai pagaminti pagal šiuolaikinės mados ten
+                      p.akr-drop__info Nereikia pamiršti ir apie aksesuarus. Peteliškės, kaklaskarės, kaklaraiščio segtukas, marškinių sąsagos – viskas tai tobulo įvaizdžio detalės.
+                    .tabs__block#tab-4  
+                      span 4
+                      p.akr-drop__info Jau virš 20 metų mūsų siuvėjų rankomis pasiūti vyriški drabužiai puošia stipriąją lytį. Klasikiniai kostiumai, švarkai pagaminti pagal šiuolaikinės mados tendencijas, sudaro didelę dalį mūsų produkcijos. Vyrai mėgsta jaustis patogiai ir gerai atrodyti. Pastaruoju metu vis dažniau pirkėjų žvilgsniai krypsta į mūsų siūlomus sportiško stiliaus drabužius, suderintus su klasika, kurie dvelkia nuosaikumu ir šiuolaikiškumu. Tam būdinga – papildomos kišenės, įvairūs dekoratyviniai apdirbimai: alkūniniai lopai, skeltukai, kišenių įdurai, dirželiai. Šios detalės padeda įgyvendinti mūsų pirkėjų lūkesčius.
+                      p.akr-drop__info Nereikia pamiršti ir apie aksesuarus. Peteliškės, kaklaskarės, kaklaraiščio segtukas, marškinių sąsagos – viskas tai tobulo įvaizdžio detalės.

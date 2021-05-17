@@ -1,0 +1,60 @@
+.models
+  @media (max-width: 767px)
+    padding: 0 0 5rem 0
+.models__body
+.models__item
+.models-item
+  display: grid
+  grid-template-columns: 43.2% 1fr 
+  padding: 10rem 0 0 0
+  @media (min-width: 768px) and (max-width: 1199px) 
+    grid-template-columns: 43.2% 50%
+    justify-content: space-between
+  @media (max-width: 767px)
+    grid-template-columns: 1fr
+
+.models-item__column
+  position: relative
+  @media (max-width: 767px)
+    margin: 2rem 0 0 0
+.models-item__title 
+  position: relative
+  padding: 10.2rem 0 0 0
+.models-item__description
+  font-size: 2rem
+  padding: 2rem 0 0 0
+  line-height: 2.4rem 
+  @media (max-width: 1199px)
+    font-size: 1.5rem
+.models-item__button
+  margin: 3.5rem 0 0 0
+  font-size: 20px
+  line-height: 24px
+  @media (max-width: 767px)
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -95vw
+.models-item__img
+  // +background-img("/assets/img/png/img-2.png")
+  width: 100%
+  padding: 0 0 83.8% 0
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+._big-number
+  font-family: Roboto
+  font-style: normal
+  font-weight: 900
+  font-size: 21rem
+  // line-height: 23.4rem
+  text-transform: uppercase
+  color: transparent
+  -webkit-text-stroke: .5rem rgba(0, 162, 215, 0.3)
+  +absolute(auto,auto,0,0,auto,0%,0%)
+  z-index: -1
+  top: 8.5rem
+  @media (max-width: 1199px)
+      font-size: 15rem 
+
+

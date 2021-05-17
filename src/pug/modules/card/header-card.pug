@@ -1,0 +1,42 @@
+section.first
+  header.header.header--card
+    .header__body.container
+      a(href="#!").header__logo
+        img(  src="assets/img/svg/logo.svg" alt="logo")
+      .header__info.info
+        a(href="#!").info__item 
+          img(src="./assets/img/svg/facebook.svg")
+        a(href="#!").info__item
+          img(src="./assets/img/svg/insta-dark.svg")
+      nav.header__menu.menu
+        i.icon-x.header__close
+        ul.menu__list
+          li.menu__item
+              a.menu__link(href="#Pradžia") Pradžia
+          li.menu__item
+              //- a.menu__link(href="#Katalogas") Katalogas
+              .block__select
+                select.select
+                  option(value='#' disabled='disabled') Katalogas
+                  option(value='#') Pradžia
+                  option(value='#') Pradžia
+                  option(value='#') Pradžia
+                  option(value='#') Pradžia
+                i.icon-chevron-down.block__icon
+          - 
+                  items = [
+                      { title: "Apie mus", url: "#Apie_mus"},
+                      { title: "Kontaktai", url: "#Kontaktai"},
+                    ]
+          each item in items
+            li.menu__item
+              a.menu__link(href=item.url)=item.title
+      i.icon-align-justify.header__burger
+
+    //- ul#soc-aside.march-connect__soc.march-connect__soc--aside.soc
+    //-   li.soc__button.soc__button--Facebook
+    //-     a(href="#!").info__item 
+    //-           img(src="./assets/img/svg/facebook.svg")
+    //-   li.soc__button.soc__button--Twitter
+    //-     a(href="#!").info__item
+    //-           img(src="./assets/img/svg/insta-dark.svg")

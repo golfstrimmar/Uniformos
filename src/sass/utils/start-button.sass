@@ -1,0 +1,51 @@
+.up_down_btn
+  position: fixed
+  right: 20px
+  bottom: 20px
+  background : $active
+  width: 4.5rem
+  height: 4.5rem
+  border-radius: 50%
+  cursor: pointer
+  display: none
+  z-index: 200
+  transition: all 0.5s
+  color: white
+  @media (max-width: 1199px) 
+    width: 3.5rem
+    height: 3.5rem
+  
+  span
+    +absolute(auto,auto,50%,50%,auto,-50%,-50%)
+    
+
+  &:hover
+    text-decoration: none
+    opacity: 1
+
+  &-show
+    display: block
+    +center
+    span
+      +background-img("/assets/img/svg/arrow-left.svg") 
+      z-index: 5
+      width: 1.2rem
+      height: 2.5rem
+      transform: translate(-50%,-50%) rotate(90deg)
+      @media (max-width: 1199px)
+        width: 1rem
+        height: 2rem
+    p
+      +background-img("/assets/img/svg/arrow-left.svg") 
+      z-index: 5
+      width: 1.2rem
+      height: 2.5rem
+      transform: translate(0,0) rotate(-90deg)
+  &-disabled
+    pointer-events: none
+    cursor: default
+    opacity: 0
+
+  @media (min-width: 0px) and (max-width: 768px)
+    &
+      display: none

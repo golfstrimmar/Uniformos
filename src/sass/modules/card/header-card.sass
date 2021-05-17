@@ -1,0 +1,42 @@
+.header--card
+  .menu__list
+    justify-content: flex-end
+    margin: 0 5.2rem 0 0
+  // .menu__link,.new-select, .block__icon
+  //   color: $white
+
+.header--card
+  &.responciveHeader
+    .menu__link,.new-select, .block__icon
+      color: $dark
+
+  .header__body
+    +jucb	
+  .menu__list
+    margin: 0 0 0 0
+    +jucs
+  .menu__link, .new-select
+    // @media (min-width: 768px) and (max-width: 1199px)
+    //   font-size: 1.2rem	
+  .header__info
+    margin: 0 10.35% 0 auto
+    flex-wrap: nowrap
+    @media (min-width: 768px) and (max-width: 1199px) 
+     margin: 0 2% 0 auto
+  
+  .header__menu
+    flex: 0 1 47.8rem
+    @media (min-width: 768px) and (max-width: 1199px)
+      flex: 0 1 58%
+
+  .header__logo
+    @media (max-width: 500px) 
+      flex: 0 1 10.4rem
+    
+
+
+
+
+
+
+

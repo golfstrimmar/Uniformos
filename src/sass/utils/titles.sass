@@ -1,0 +1,23 @@
+h1,h2,h3,h4, h5, h6
+  display: inline-block
+  margin: 0 auto
+  font-weight: 400
+
+.main-title
+  h2
+    +f1
+    @media (max-width: 1240px) 
+      font-size: 5rem
+
+    @media (max-width: 767px)
+      font-size: 2.5rem
+      line-height: 4rem
+
+.title-1
+  h2
+    font-weight: 800
+    font-size: 5rem
+    line-height: 6.1rem
+    text-transform: uppercase
+    @media (max-width: 1199px)
+      font-size: 3rem 

@@ -1,0 +1,317 @@
+.cat-filter
+  &__body
+    +alic
+
+  &__devider
+    height: 1.5rem
+    width: .7rem
+    +background-img("/assets/img/svg/arrow-right.svg")
+    margin: 0 3rem 0  1rem
+  &__block
+    margin: 0 0 0 7rem
+    +alic
+    @media (max-width: 850px) 
+      flex: 0 1 100%
+      margin: 0 0 0 0
+      +fdc
+      +alis
+      margin: 1rem 0 0 0
+  &__link
+    margin: 0 2rem 0 0
+    &:last-child
+      margin: 0 0 0 0
+  &__link--block
+    margin: 0 5rem 0 0
+  &__wrapper
+    padding: 3rem 0
+    border-top: 1px solid $_69
+    border-bottom: 1px solid  $_69
+    margin: 13rem 0 0 0
+
+.cat-catalog
+  &__sidebar
+    padding: 7rem 0 0 0
+
+
+
+.catalog-sidebar
+  &__line
+    padding: 4rem 0 0 0
+    border-bottom: 1px solid  $dark
+    +alic
+    &:last-child
+      border-bottom: none
+  &__title
+    margin: .5rem 0 0 0
+  &__line-items
+    margin: 1rem 0 0 0
+    +alic
+    +jucb	
+    width: 90%
+    div
+      // margin: 0 5rem 0 0    
+    label
+      &:before
+        border-radius: .5rem!important
+        width: 5.6rem!important
+        height: 5.6rem!important
+        border: none!important
+        @media (max-width: 650px) 
+          width: 4rem!important
+          height: 4rem!important
+        
+      &:after
+        position: absolute!important
+        left: 50%!important
+        top: 50%!important
+        width: 6rem !important
+        height: 6rem !important
+        border-radius: .5rem!important
+        transform:  translate(-27%,-3%) rotate(0deg)!important
+        opacity: 0
+        @media (max-width: 650px) 
+          width: 4.4rem!important
+          height: 4.4rem!important
+          transform:  translate(-1.6rem,-.2rem) rotate(0deg)!important
+    .label-1
+      &:before
+        background: #313F5D!important
+    .label-2
+      &:before
+        background: #736E70!important
+    .label-3
+      &:before
+        background: #000000!important
+    .label-4
+      &:before
+        background: #601E2C!important
+
+
+
+    input[type="checkbox"]:checked + label::after
+      opacity: 1
+    .label-1
+      &:after
+        border: .1rem solid #313F5D!important
+    .label-2
+      &:after
+        border: .1rem solid #313F5D!important
+    .label-3
+      &:after
+        border: .1rem solid #313F5D!important
+    .label-4
+      &:after
+        border: .1rem solid #313F5D!important
+    .label-5
+      &:after
+        border: .1rem solid #313F5D!important
+  &__item
+    padding: 0 0 1.6rem 0
+    div 
+      margin: 0 0 2.5rem 0
+    label
+      font-size: 1.5rem
+      line-height: 1.8rem
+      color: #000000
+    input[type="checkbox"] + label
+      padding-left: 5.2rem
+    input[type="checkbox"]:not(:checked) + label::before
+      +bg(white!important)
+      border: 1px solid $dark!important
+      border-radius: 3px!important
+      width: 1.7rem!important
+      height: 1.7rem!important
+    input[type="checkbox"]:checked + label::before
+      +bg(white!important)
+      border: 1px solid #2979ff!important
+      border-radius: 3px!important
+      width: 1.7rem!important
+      height: 1.7rem!important
+    input[type="checkbox"]:checked + label::after
+      width: 1rem
+      height: .6rem
+      border-left: .1rem solid #2979ff
+      border-bottom: .1rem solid #2979ff
+.catalog-sidebar__title
+  h5
+    font-size: 2rem
+    line-height: 2.4rem
+    text-transform: capitalize
+    color: #000000
+
+
+.cat-catalog
+  &__body
+    +jucb	
+  &__sidebar
+    flex: 0 1 24.4%
+    @media (min-width: 1021px) and (max-width: 1199px)
+      flex: 0 1 30%
+    @media (max-width: 1020px) 
+      padding: 0 0 0 0
+      flex: 0 1 50%
+      margin: 0 auto 3rem auto
+    @media (max-width: 550px) 
+      flex: 0 1 100%
+    @media (max-width: 767px)
+      padding: 10rem 0 0 0!important 
+  &__content
+    flex: 0 1 68.8%
+    margin: 4.3rem 0 0 0
+    @media (max-width: 1020px) 
+      flex: 0 1 100%
+    @media (max-width: 650px)
+      margin: 4rem 0 0 0
+// .cat-catalog-content
+//     padding: 4.3rem 0 0 0
+//     .slider__slider
+//       display: grid
+//       grid-template-columns:  1fr
+//       grid-gap: 18px
+//       @media (max-width: 1199px)
+//       @media (max-width: 767px)
+      
+    // .slider__content
+    //   width: 100%
+
+    // .slider__body
+    //   margin: 0 -10px
+    // .slider__item
+    //   padding: 0 20px	20px
+    //   min-height: 100%
+
+    // .slider
+    //   .slick-slide
+    //     margin: 0 10px
+    //   .slider__body
+    //     +pro
+    //     min-height: 400px
+
+    //   .slick-dots
+    //     position: absolute
+    //     bottom: -5rem
+    //     left: 50%
+    //     transform: translateX(-50%)
+    //     +jucc
+    //     flex-wrap: nowrap
+    //     @media (max-width: 1199px) 
+    //       bottom: -3.5rem
+        
+    //     li
+    //       margin: 0 2rem
+    //       font-size: 0
+    //       width: 1.37rem
+    //       height: 1.37rem
+    //       border-radius: 50%
+    //       border: 1px solid #000000
+    //       transition: all 0.2s ease-in-out
+    //       &:hover
+    //         cursor: pointer
+    //         +bg( lighten($dark, 30%) )  
+    //     li.slick-active
+    //       +bg($dark)
+  
+.cat-catalog-content
+      // .slider__item
+      //   padding: 0 0 0 0
+      //   border-radius: 0
+      // .slider__body
+      //   margin: 0 0 0 0
+      // .slick-slide
+      //   margin: 0 0 0 0!important
+      // .slider-card
+      position: relative
+      display: grid
+      grid-template-columns: repeat(auto-fill,26rem)
+      row-gap: 5rem
+      justify-content: space-between
+      // min-height: 400px
+      @media (min-width: 651px) and (max-width: 1199px) 
+        grid-template-columns: repeat(2,26rem)
+        justify-content: center
+        column-gap: 1rem
+      @media (max-width: 650px) 
+        grid-template-columns: 100%
+        justify-items: center
+        row-gap: 2rem
+      .card-object
+        width: 26rem
+        height: 45.5rem
+        background: rgba(139,139,139, .1)
+        border-radius: 5px
+        padding: 3rem
+        +fdc
+        @media (max-width: 767px) 
+          width: 20rem
+          height: 33.5rem
+        
+        &__img
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            width: 20rem
+            height: 30rem
+            @media (max-width: 767px) 
+              width: 100%
+        &__title
+          // display: inline-block
+          width: auto
+          height: auto
+          margin: 1.5rem 0
+        &__button
+          width: 100%
+          height: 4rem
+          border: .1rem solid #000000
+          border-radius: .5rem
+          +bg(transparent)
+          @extend %_15-18
+          &:hover
+            +bg(lighten($active,10%))
+            +border(.1rem, lighten($active,30%))
+            color: $active
+          &:focus
+            +bg(darken($active,10%))
+            +border(.1rem, darken($active,30%))
+            color: $active
+
+.cat-catalog-content__pagination
+        position: absolute
+        bottom: -5rem
+        left: 50%
+        transform: translateX(-50%)
+        +jucc
+        flex-wrap: nowrap
+        @media (max-width: 1199px) 
+          bottom: -3.5rem
+        
+.content-pagination__item
+          margin: 0 2rem
+          font-size: 0
+          width: 1.37rem
+          height: 1.37rem
+          border-radius: 50%
+          border: 1px solid #000000
+          transition: all 0.2s ease-in-out
+          &:hover
+            cursor: pointer
+            +bg( lighten($dark, 30%) )  
+          &:focus
+            +bg($dark)
+.wrapper-categories
+  +fdc
+  .cat-filter
+    @media (max-width: 767px) 
+      order: 2
+      
+  .cat-filter__wrapper
+    @media (max-width: 767px)
+      margin: 8rem 0 0 0
+
+
+
+
+
+
+
+
+

@@ -119,7 +119,32 @@ module.exports = {
       template: "src/pug/pages/index.pug",
       filename: "./index.html",
     }),
-   
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/index.pug",
+      filename: "./index.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/about.pug",
+      filename: "./about.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/card.pug",
+      filename: "./card.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/categories.pug",
+      filename: "./categories.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/contacts.pug",
+      filename: "./contacts.html",
+    }),
+
     new CopyWebpackPlugin({
       patterns: [
         { from: "src/img", to: "assets/img" },

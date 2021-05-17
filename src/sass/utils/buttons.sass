@@ -5,21 +5,45 @@
   i
     margin: 0 0 0 0
     font-size: 20px
+  border: 1px solid $dark
+  width: 25.8rem
+  height: 6.5rem
+  +bg(white)
+  border-radius: 16.3rem
+  transition: all 0.2s ease-in-out
+  @media (max-width: 1199px) 
+    width: 18rem
+    height: 4rem
   &:hover
-    +bg(lighten($active,30%))
-    +border(1px , darken($active,10%)!important)
-    box-shadow: 0px 0px 20px lighten($dark-1,60%)!important
-    color: lighten($active,10%)
-  &:focus
-    +border(1px , darken($active,10%)!important)
-    +bg(lighten($active,10%))
-    box-shadow: 0px 0px 20px lighten($dark-1,60%)!important
+    +bg($dark)
+    +border(.1rem, trasparent)
     color: white
-    &>span
-      color: white
+  &:focus
+    +bg($dark)
+    +border(.1rem, trasparent)
+    color: white
+
+.btn--empty-white
+  border-radius: 9.7rem
+  +bg(transparent)
+  width: 33.8rem
+  height: 9.6rem
+  color: $white
+  border: .3rem solid #FFFFFF
+  transition: all 0.2s ease-in-out
+  &:hover
+    +bg(lighten($active,10%))
+    +border(.3rem, lighten($active,30%))
+    color: $active
+  &:focus
+    +bg(darken($active,10%))
+    +border(.3rem, darken($active,30%))
+    color: $active
 
 
-   
+
+
+
 .btn--success-icon
   i
     margin: 0 14px 0 0

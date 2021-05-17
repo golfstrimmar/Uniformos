@@ -1,0 +1,51 @@
+.insta
+  padding: 9.5rem 0 0 0
+.insta__title
+  +alic  
+  +jucc
+  padding: 0 0 4.5rem 0
+
+  h2
+    margin: 0 0 0 0
+    text-transform: uppercase
+  img
+    margin: 0 0 0 1.5rem
+.insta__body
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: repeat(2, 1fr)
+  column-gap: 3.2rem
+  height: 26.8rem
+  @media (min-width: 768px) and (max-width: 1199px) 
+    grid-template-columns: repeat(2, 1fr)
+    height: auto
+    grid-gap: 3.2rem
+  @media (max-width: 767px) 
+    grid-template-columns:  1fr
+    height: auto
+    grid-gap: 3.2rem
+.insta__item
+
+.insta-item
+
+
+.insta-item__img
+  +pro
+
+.insta__item
+  position: relative
+  &:hover
+    cursor: pointer
+    & > .slider-card__link
+      opacity: 1
+      visibility: visible
+
+.insta__item
+  .slider-card__link
+    transform: translate(-50%,-50%)
+    &:after
+      +background-img("/assets/img/svg/insta-small.svg")
+      width: 2.3rem
+      height: 2.3rem
+
+
